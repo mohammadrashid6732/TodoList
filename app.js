@@ -59,7 +59,7 @@ const todoDisplay = (data) => {
 
 // ADD HANDLER FOR TODO TASK AND DATE
 const addHandler = () => {
-  const task = todoText.value;
+  const task = todoText.value.trim();
   const date = todoDate.value;
   const todo = {
     id: generateId(),
@@ -145,7 +145,7 @@ const filterHandler = (e) => {
       filteredTodos = todos;
       break;
   }
-  todoDisplay(filteredTodos)
+  todoDisplay(filteredTodos);
 };
 // EVENT LISTENER
 window.addEventListener("load", () => todoDisplay());
@@ -155,3 +155,13 @@ editButton.addEventListener("click", applyEditHandler);
 filterButton.forEach((filterBtn) =>
   filterBtn.addEventListener("click", filterHandler)
 );
+todoText.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addHandler();
+  }
+});
+todoDate.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addHandler();
+  }
+});
