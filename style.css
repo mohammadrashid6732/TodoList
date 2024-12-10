@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+  background: #f7f0f0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.boxContainer {
+  border: none;
+  border-radius: 10px;
+  width: 50rem;
+  height: 12rem;
+  background: white;
+}
+.boxContainer h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.inputContainer input {
+  width: 25rem;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid gold;
+  border-radius: 10px;
+  color: black;
+  outline: none;
+}
+.button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: gold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+#delete-button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 6, 6);
+  font-size: 15px;
+  cursor: pointer;
+}
+#delete-button:hover {
+  background-color: rgb(245, 40, 40);
+}
+table {
+  margin-top: 20px;
+  width: 50rem;
+}
+thead {
+  background-color: gray;
+}
+thead th {
+  padding: 10px;
+}
+thead th:first-child {
+  border-top-left-radius: 10px;
+}
+thead th:last-child {
+  border-top-right-radius: 10px;
+}
+tbody td {
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+  width: 25%;
+}
+tbody td button {
+  padding: 4px 8px;
+  margin: 2px 5px;
+  border: none;
+  border-radius: 5px;
+}
+tbody td button:nth-child(1) {
+  background-color: gold;
+}
+tbody td button:nth-child(2) {
+  background-color: green;
+  width: 48px;
+}
+tbody td button:nth-child(3) {
+  background-color: red;
+  cursor: pointer;
+}
+#alert-message {
+  width: 50rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.alert {
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+}
+.alert-success {
+  background-color: green;
+  color: white;
+}
+.alert-error {
+  background: red;
+  color: white;
+}
+.button:hover {
+  background-color: rgb(255, 222, 34);
+}
+tbody td button:nth-child(1):hover {
+  background-color: rgb(255, 222, 34);
+}
+tbody td button:nth-child(2):hover {
+  background-color: rgb(0, 234, 0);
+}
+tbody td button:nth-child(3):hover {
+  background-color: rgb(245, 40, 40);
+}
+.editTodo {
+  display: none;
+}
